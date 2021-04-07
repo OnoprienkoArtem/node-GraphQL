@@ -4,6 +4,8 @@ const graphqlHTTP = require('express-graphql');
 
 const sequelize = require('./utils/database');
 
+const schema = require('./graphql/schema');
+const resolver = require('./graphql/resolver');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
